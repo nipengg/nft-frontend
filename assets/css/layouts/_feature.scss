@@ -1,0 +1,21 @@
+/*****feature section *****/
+.feature-area{
+    .nav-tabs{
+        border: none;
+        button{
+            color: $white;
+
+        }
+        .nav-link{
+            border: none;
+            &:hover{
+                border: none;
+            }
+        }
+        .active{
+            color: $primary-color;
+            background: transparent;
+            border: none;
+        }
+    }
+}

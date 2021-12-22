@@ -1,0 +1,103 @@
+/* Laptops device */
+/* --------------- */
+@media(min-width: 1200px) and (max-width: 1500px){
+
+}
+@media(max-width: 1200px){
+    header {
+        padding: 15px 0px 25px 0px;
+    }
+    #main-menu{
+        padding: 20px;
+        height: 80vh;
+        display: none;
+        position: absolute;
+        width: 300px;
+        float: left;
+        border: 1px solid rgba(255,255,255,.1);
+        right: 0;
+        top: 65px;
+        background: #040B29;
+    }
+    .header-content ul.nav-menu li {
+        display: block;
+    }
+    .menu-toggler{
+        float: right;
+        display: block !important;
+    }
+    .header-content .logo {
+        width: 30%;
+    }
+    .toggle-bar{
+        float: right;
+    }
+    .header-content .header-right {
+        width: 50%;
+    }
+    .header-content input[type="search"] {
+        display: none;
+        background: #040B29;
+        width: 50%;
+        position: absolute;
+        top: 51px;
+        left: 180px;
+    }
+    .header-content .search-area .toggle-search{
+        display: block;
+    }
+    .header-content .search-area i {
+        left: 40%;
+    }
+}
+
+/* Normal desktop device */
+/* --------------------------- */
+@media (min-width:992px) and (max-width:1199px){
+
+}
+/* tablet or medium device */
+/* ------------------------------- */
+@media(max-width:991px){
+    .banner-area .banner-content .banner-text h2 {
+        font-size: 2.75rem;
+        width: auto;
+    }
+}
+@media(max-width: 680px){
+    .logo img{
+        width: 100px;
+    }
+    .wallet {
+        display: none !important;
+    }
+    .header-content {
+        padding: 0px 5px;
+    }
+    .header-content .header-right .user {
+        padding: 0px  12px;
+    }
+    .header-content .toggle-bar {
+        margin-top: 7px;
+        width: 15%;
+    }
+    .header-content input[type="search"] {
+        width: 80%;
+        left:0px;
+    }
+
+    
+}
+
+/* small or mobile device 320px */
+/* ------------------------------- */
+@media (max-width:767px) {
+
+}
+
+/* Large mobile */
+/* @media(min-width:480px) and (max-width:767px){
+    .container{
+        width: 450px;
+    }
+} */

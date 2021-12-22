@@ -1,0 +1,83 @@
+/*****footer section******/
+.footer-wrapper{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.footer-top{
+    padding-bottom: 50px;
+    border-bottom: 1px solid $border-color;
+    h3{
+        margin:20px 0px;
+        font-size: 24px;
+        font-weight: 700;
+    }
+    .mail-area{
+        width: 80%;
+        input{
+            border-radius: 3px;
+            width: 100%;
+            background: rgba(255,255,255,.15);
+            outline: none;
+            border: none;
+            padding: 13px 15px;
+            color: $white;
+            &::placeholder{
+                color: $white;
+            }
+        }
+        a{
+            position: absolute;
+            bottom: 6px;
+            right: 7px;
+            background: $primary-color;
+            padding: 8px 20px;
+            color:$white;
+            font-weight: 700;
+            &:hover{
+                background: blue;
+            }
+        }
+    }
+    .social-link a{
+        margin-right: 10px;
+        font-size: 22px;
+        color: $white;
+        background: $primary-color;
+        padding: 7px 13px;
+        border-radius: 2px;
+        &:hover{
+            border-radius: 50%;
+            background: blue;
+        }
+    }
+}
+.footer-menu{
+    padding: 80px 0px;
+    ul{
+        li{
+            a{
+                color: $white;
+                &:hover{
+                    color: $primary-color;
+                }
+            }
+            &::before{
+                color: blueviolet;
+                content: '\f111';
+                font-family: 'Font Awesome 5 Free';
+                font-weight:300;
+                color: $primary-color;
+                font-size: 12px;
+                margin-right:10px;
+            }
+        }
+    }
+}
+.footer-bottom{
+    background: $body-bg;
+    padding: 20px 0px;
+    span{
+        color: $white;
+    }
+}

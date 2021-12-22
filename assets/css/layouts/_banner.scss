@@ -1,0 +1,80 @@
+/*****banner section*****/
+.banner-area{
+    background: $bg-black;
+    .banner-content{
+
+        padding: 120px 0px;
+        img{
+            width: 100%;
+            animation: floating 4s linear infinite;
+        }
+        .banner-text{
+            h2{
+                font-size:3.75rem;
+                font-weight: 700;
+              
+                span{
+                    color: $primary-color;
+                }
+            }
+            p{
+                font-weight: 600;
+                color: $white;
+                width: 80%;
+                margin:30px 0px;
+            }
+            
+            .btn {
+                border-radius: 40px;
+                text-transform: capitalize;
+                position: relative;
+                text-decoration: none;
+                border: 1.5px solid transparent;
+                padding: 10px 30px;
+                font-size: 16px;
+                font-weight: 600;
+                background-size: 300%;
+                transition: all 0.6s;
+                margin-right: 30px;
+              }
+              
+              .btn-1 {
+                  color:$white;
+                  background-image: linear-gradient(120deg,$primary-color 50%, $white 50%);
+                  border: none;
+                  
+                  &:hover{
+                      color:black;
+                  }
+              }
+              
+
+              .btn-2 {
+                  color: $white;
+                  background-image: linear-gradient(90deg,transparent 50%, $white 50%);
+                  border-color: $white;
+                  border: 1.5px solid $white;
+                  &:hover{
+                      color: $black;
+                      border-color: transparent;
+                  }
+              }
+              .btn:hover {
+                background-position: 100%;
+                transform: translateY(-0.4rem);
+              }
+     }
+    }
+}
+@keyframes floating{
+    0% {
+        transform: translate(0, 0px);
+    }
+    
+    50% {
+        transform: translate(0, 15px);
+    }
+    100% {
+        transform: translate(0, 0px);
+    }
+}

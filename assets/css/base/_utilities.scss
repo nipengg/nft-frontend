@@ -1,0 +1,241 @@
+/***** Preloader *******/
+.loader-bg {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 99999;
+    background:$body-bg;
+  }
+  
+  .loader {
+    border: 0 solid transparent;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: calc(50vh - 75px);
+    left: calc(50vw - 75px);
+  }
+  
+  .loader::before, .loader::after {
+    content: '';
+    // border: 2em solid #ff3636;
+    background: #271b77d3;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: inherit;
+    height: inherit;
+    animation: loader 2s linear infinite;
+    opacity: 0;
+  }
+  
+  .loader::before {
+    animation-delay: 1s;
+  }
+  
+  @keyframes loader {
+    0% {
+      transform: scale(0);
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 0;
+    }
+  }
+  
+  
+/* button Style scroll top */
+.go-top {
+    right:1em;
+    bottom:2em;
+    text-decoration:none;
+    padding:5px;
+    border-radius:5px;
+    position:fixed;
+    z-index:99;
+    i{
+        font-size: 26px;
+        color: $white;
+        &:hover{
+            color: $amount-color;
+            transform: rotate(360deg);
+        }
+    }
+  
+  }
+
+
+/*****common card css for extend****/ 
+.nft-card{
+    margin-top: 20px;
+    position: relative;
+    &::before,&::after{
+        position: absolute;
+        content: '';
+        left: 5%;
+        bottom: 0px;
+        transform: translateY(15px);
+        width: 90%;
+        height: 80%;
+        background: $box-bg;
+        z-index: -1;
+        border-radius: 5px;
+        box-shadow: 0px 5px 10px 1px #00000050;
+        transition: .2s;
+
+    }
+    &::after{
+        z-index: -2;
+        left: 10%;
+        bottom: -14px;
+        width: 80%;
+        transition: .3s;
+    }
+    .card-content{
+    box-shadow: 0px 5px 10px 1px #00000050;
+        border-radius: 5px;
+        background: #1A203C;
+        padding: 20px;
+        margin-top: 20px;
+        z-index: 9999;
+    }
+    &:hover{
+        transform: translateY(10px);
+    }
+    &:hover::before, ::after{
+        transform: translateY(-30px);
+     }
+    &:hover::after{
+        transform: translateY(-30px);
+     }
+
+        .card-header {
+            padding: 0px 0px 15px 0px;
+            background: transparent;
+        display: flex;
+        justify-content: space-between;
+
+    a{
+        font-size: 18px;
+        font-weight: 600;
+        margin-left: 5px;
+        color:$white; 
+        &:hover{
+            color: $primary-color;
+        }
+
+    }
+    .dots{
+        font-size: 20px;
+     }
+    }
+    .card-img{
+       width: 100%;
+       text-align: center;
+    }
+    .time-counter {
+        padding: 10px 5px;
+        position: absolute;
+        bottom: 9px;
+        left: 0;
+        right: 0;
+        background: $primary-color;
+        border-radius: 40px;
+        width: 85%;
+        margin: auto;
+        h3 {
+            font-weight: 300;
+        margin-bottom: 0;
+        font-size: 18px;
+        text-align: center;
+  }
+ }
+ .card-footer{
+     padding: 0;
+     background: transparent;
+     h2{
+         margin-top: 15px;
+         font-weight: 700;
+         font-size: 24px;
+         &:hover{
+             color: $primary-color;
+         }
+     }
+ }
+ .card-price{
+     p{
+         span{
+             color:$amount-color;
+         }
+     }
+     a{
+         font-size: 18px;
+         color: $white;
+         &:hover{
+             color: $primary-color;
+         }
+     }
+ }
+}
+/*****section header for extend****/ 
+.section-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    background: $box-bg;
+    border: 1px solid rgba(156, 155, 167, 0.2);
+    box-shadow: 0 0 10px 1px rgba(32, 32, 32, 0.349);
+    border-radius: 3px;
+    h2{
+        color: $white;
+        font-weight: 700;
+        font-size: 28px;
+        margin: 0;
+        i{
+            color: $primary-color;
+            margin-right: 10px;
+        }
+    }
+
+}
+/*****icon for extend  ****/ 
+.icon{ 
+    width: 35px;
+    i{
+        background:$primary-color;
+        position: absolute;
+        right: -5px;
+        bottom: 2px;
+        border-radius: 50%;
+        font-size: 16px;
+            color: $white;
+    }
+    &:nth-child(2){
+        margin-left: -20px !important;
+    }
+    &:nth-child(3){
+        margin-left: -20px !important;
+    }
+}
+/*****Seller/Buyer area follow btn****/
+.btn-follow{
+    font-weight: 700;
+    background:$bg-btn;
+    color: #fff;
+    padding: 4px 20px;
+    border-radius: 40px;
+    &:hover{
+        background: $primary-color;
+    }
+    
+ } 
+
+
+

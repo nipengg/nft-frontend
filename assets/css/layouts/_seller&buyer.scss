@@ -1,0 +1,99 @@
+///*****seller & Buyer section****/
+.seller{
+    .seller-icon{
+        h2{
+            font-size: 26px;
+            font-weight: 700;
+            margin: 0;
+            padding: 10px 0px;
+            i{
+                color: $primary-color;
+                margin-right: 10px;
+                font-size: 26px;
+            }
+        }
+    }
+    .dropbtn {
+        background-color:$primary-color;
+        color:$white;
+        padding: 5px 10px;
+        border-radius: 40px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+    }
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color:$primary-color;
+        min-width: 160px;
+        overflow: auto;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    a {
+        padding: 5px;
+        color: $white;
+        text-decoration: none;
+        display: block;
+        &:hover {background-color: $bg-hover}
+    }
+
+   } 
+
+   .seller-btn{
+       .view-all{
+           color: $primary-color;
+           font-size: 20px;
+           font-weight: 700;
+           margin-left: 15px;
+        &:hover i{
+            transform: rotate(360deg);
+        }       }
+   }
+   .show {display:block;}
+
+   .single-seller{
+       margin-top: 20px;
+       box-shadow: 0 0 10px 1px rgba(32, 32, 32, 0.349);
+       padding: 10px 10px;
+       align-items: center;
+       display: flex;
+       justify-content: space-between;
+       background: $box-bg;
+       border-radius: 5px;
+       span{
+           font-size: 18px;
+           color: $amount-color;
+       }
+       .follow-btn{
+           .btn-1{
+            @extend .btn-follow;
+           }
+       }
+       .img {
+           margin-right: 20px;
+        .icon i {
+            right: -24px;
+            bottom: 8px;
+       }img{
+           margin-right: 20px;
+           width: 55px;
+       }
+    }
+       .text{
+        h3{
+            margin-bottom: 0;
+         a{
+            color: $white;
+            font-size: 20px;
+            font-weight:700;
+        }
+      }
+
+    }
+   }
+
+
+
+
+
+} 

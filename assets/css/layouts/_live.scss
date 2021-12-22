@@ -1,0 +1,47 @@
+/****live area section****/ 
+.live-area{
+    padding: 100px 0px;
+    .section-header{
+        img{
+            width: 50px;
+        }
+        h2{
+            display: inline-block;
+            font-weight: 600;
+        }
+        .arrow-btn{
+            right: 30px;
+            a{
+                border-radius: 50%;
+                color:$white;
+                padding: 5px 22px;
+                background: #8c8c8c40;
+                margin-left: -15px;
+                font-size: 14px;
+                transition: .3s;
+                &:hover{
+                    background: $primary-color;
+                }
+            }
+        }
+    }
+    .swiper-container {
+        padding-bottom: 45px;
+    }
+
+    a.swiper-button-prev,.swiper-button-next {
+        position:relative;
+    }
+    .swiper-button-next:after ,.swiper-button-prev:after {
+        content: 'next';
+        display: none;
+    }
+    .arrow-btn .swiper-button-next{
+        position: absolute;
+        right: -20px;
+    }
+    .arrow-btn .swiper-button-prev{
+        position: absolute;
+        left: -64px;
+    }
+}

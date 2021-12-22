@@ -1,0 +1,16 @@
+/*****Partner logo section*****/ 
+.partner-logo{
+    padding: 40px;
+    .logo-wrapper{
+    border: 1px solid rgba(156, 155, 167, 0.2);
+    margin: 40px 0px;
+    padding: 20px 0px;
+
+    }
+    img{
+        width: 75px;
+        &:hover{
+            transform: scale(1.2);
+        }
+    }
+}
